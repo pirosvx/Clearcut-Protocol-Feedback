@@ -1,0 +1,47 @@
+[
+  {
+    "name": "bug",
+    "color": "d73a4a",
+    "description": "Something is not working."
+  },
+  {
+    "name": "feedback",
+    "color": "a2eeef",
+    "description": "Feedback or a suggestion."
+  },
+  {
+    "name": "needs review",
+    "color": "fbca04",
+    "description": "Awaiting review by The Creator."
+  },
+  {
+    "name": "confirmed",
+    "color": "1d76db",
+    "description": "Issue reproduced or otherwise verified."
+  },
+  {
+    "name": "in progress",
+    "color": "5319e7",
+    "description": "Work has started."
+  },
+  {
+    "name": "needs information",
+    "color": "d876e3",
+    "description": "Waiting for more details."
+  },
+  {
+    "name": "fixed",
+    "color": "0e8a16",
+    "description": "Resolved; closing comment identifies the release."
+  },
+  {
+    "name": "duplicate",
+    "color": "cfd3d7",
+    "description": "Already tracked in another issue."
+  },
+  {
+    "name": "planned",
+    "color": "0052cc",
+    "description": "Accepted for a future update."
+  }
+]

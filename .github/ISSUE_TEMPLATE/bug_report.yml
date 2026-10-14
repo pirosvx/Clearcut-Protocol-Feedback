@@ -1,0 +1,95 @@
+name: Bug report
+description: Report a problem with Clearcut Protocol.
+title: '[Bug] '
+labels:
+- bug
+- needs review
+body:
+- type: markdown
+  attributes:
+    value: Reports are public. Check existing reports first, and remove personal information
+      from screenshots and logs.
+- type: input
+  id: mod-version
+  attributes:
+    label: Clearcut Protocol version
+    placeholder: Version shown in Satisfactory Mod Manager
+  validations:
+    required: true
+- type: input
+  id: game-version
+  attributes:
+    label: Satisfactory version / build number
+  validations:
+    required: true
+- type: dropdown
+  id: session
+  attributes:
+    label: Play mode
+    options:
+    - Single player
+    - Multiplayer host
+    - Multiplayer client
+    - Dedicated server
+  validations:
+    required: true
+- type: dropdown
+  id: area
+  attributes:
+    label: Affected feature
+    options:
+    - Chainsaw clearing / range
+    - Clearing mode switching
+    - Research / unlocking upgrades
+    - Announcements / subtitles
+    - Icons / interface
+    - Crash / loading / packaging
+    - Other
+  validations:
+    required: true
+- type: textarea
+  id: observed
+  attributes:
+    label: What happened?
+  validations:
+    required: true
+- type: textarea
+  id: expected
+  attributes:
+    label: What did you expect?
+  validations:
+    required: true
+- type: textarea
+  id: steps
+  attributes:
+    label: Steps to reproduce
+    placeholder: '1. ...
+
+      2. ...
+
+      If you cannot reproduce it reliably, say so.'
+  validations:
+    required: true
+- type: input
+  id: upgrade
+  attributes:
+    label: Research level and clearing mode
+    placeholder: 'For example: level 3, Area mode'
+  validations:
+    required: false
+- type: textarea
+  id: other-mods
+  attributes:
+    label: Other installed mods
+    description: Include their versions if known. State whether you tested with other
+      mods disabled; testing is optional.
+  validations:
+    required: false
+- type: textarea
+  id: attachments
+  attributes:
+    label: Screenshots, logs, or crash details
+    description: Attach files or paste relevant details. Remove personal information
+      first.
+  validations:
+    required: false

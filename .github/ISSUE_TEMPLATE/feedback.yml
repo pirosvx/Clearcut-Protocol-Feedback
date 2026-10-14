@@ -1,0 +1,48 @@
+name: Feedback or suggestion
+description: Share feedback or propose an improvement.
+title: '[Feedback] '
+labels:
+- feedback
+- needs review
+body:
+- type: markdown
+  attributes:
+    value: Reports are public. Check existing reports first, and remove personal information
+      from screenshots and logs.
+- type: dropdown
+  id: category
+  attributes:
+    label: Feedback type
+    options:
+    - Feature suggestion
+    - Research costs / progression
+    - Clearing range / gameplay balance
+    - Art / icons
+    - Voice / dialogue / audio balance
+    - General feedback
+  validations:
+    required: true
+- type: textarea
+  id: feedback
+  attributes:
+    label: Your feedback or idea
+  validations:
+    required: true
+- type: textarea
+  id: reason
+  attributes:
+    label: What would this improve?
+  validations:
+    required: false
+- type: input
+  id: version
+  attributes:
+    label: Clearcut Protocol version
+  validations:
+    required: false
+- type: textarea
+  id: examples
+  attributes:
+    label: Examples or screenshots
+  validations:
+    required: false
